@@ -4,11 +4,22 @@ on:
   push:
     branches: [ master ]
 
+env:
+  NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+  NUGET_XMLDOC_MODE: skip
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: ${{ env.NUGET_PACKAGES }}
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
 
     - name: Restore packages
       run: dotnet restore --locked-mode
