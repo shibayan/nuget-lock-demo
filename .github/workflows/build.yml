@@ -25,4 +25,4 @@ jobs:
       run: dotnet restore --locked-mode
 
     - name: Build projects
-      run: dotnet build -c Release
+      run: dotnet build -c Release --no-restore
