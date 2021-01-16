@@ -23,8 +23,5 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-nuget-
 
-    - name: Restore packages
-      run: dotnet restore --locked-mode --verbosity normal
-
     - name: Build projects
-      run: dotnet build -c Release --no-restore
+      run: dotnet build -c Release -p:RestoreLockedMode=true --verbosity normal
