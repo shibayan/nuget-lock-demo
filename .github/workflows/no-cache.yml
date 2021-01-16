@@ -4,6 +4,9 @@ on:
   push:
     branches: [ master ]
 
+env:
+  NUGET_XMLDOC_MODE: skip
+
 jobs:
   build:
     runs-on: ubuntu-latest

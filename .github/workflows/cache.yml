@@ -7,7 +7,6 @@ on:
 env:
   NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
   NUGET_XMLDOC_MODE: skip
-  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 
 jobs:
   build:
