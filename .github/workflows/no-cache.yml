@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build projects
-      run: dotnet build -c Release --verbosity normal
+      run: dotnet build -c Release
