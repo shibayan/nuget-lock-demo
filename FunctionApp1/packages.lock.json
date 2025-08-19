@@ -14,15 +14,15 @@
       },
       "Microsoft.Azure.WebJobs.Extensions.DurableTask": {
         "type": "Direct",
-        "requested": "[3.3.1, )",
-        "resolved": "3.3.1",
-        "contentHash": "glS97EYlH0sHjIB5XqgDaRJw4wXRCgSDkFR0qUAM7vbg7P2GgBsk7WkXTpTbBygauJUT1ZPtOYxlmp7whIolsA==",
+        "requested": "[3.4.1, )",
+        "resolved": "3.4.1",
+        "contentHash": "GgYF9Yp5yoSFOK7VmkKW73B1Er1p7L0SjnKQPUlqQfES1PO0PPSfGcbJl2VdYVDBVubyLA50dHj9gKyCyyTK/w==",
         "dependencies": {
           "Azure.Identity": "1.12.1",
           "Grpc.Core": "2.46.6",
           "Microsoft.AspNetCore.Mvc.WebApiCompatShim": "2.2.0",
           "Microsoft.Azure.DurableTask.ApplicationInsights": "0.5.0",
-          "Microsoft.Azure.DurableTask.AzureStorage": "2.3.0",
+          "Microsoft.Azure.DurableTask.AzureStorage": "2.4.0",
           "Microsoft.Azure.DurableTask.Core": "3.3.0",
           "Microsoft.Azure.WebJobs": "3.0.39",
           "Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers": "0.5.0",
@@ -473,8 +473,8 @@
       },
       "Microsoft.Azure.DurableTask.AzureStorage": {
         "type": "Transitive",
-        "resolved": "2.3.0",
-        "contentHash": "X1DoMxAqbSl9gc42S/ZC+j5dOb+sfHnHB5zedhCHTRsPoJdat881p1uoK0x+Bd81HAkfY3kEpGzl7t7LYQpVzA==",
+        "resolved": "2.4.0",
+        "contentHash": "tkmwleBtxK0aF3jJggx7yGynUDvNUiSwhY7oCc/RbgwYcRNdQMyG96YJTg/yhVKQGgkPK/TC40F9OaTfiuGh1g==",
         "dependencies": {
           "Azure.Data.Tables": "12.11.0",
           "Azure.Storage.Blobs": "12.24.0",
